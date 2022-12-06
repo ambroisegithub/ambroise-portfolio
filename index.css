@@ -1,0 +1,284 @@
+
+body:after {
+    content:"\00a9 me";
+  }
+body{
+background-color: black;
+width: 1600px;
+height: 900px;
+}
+.navigation{
+    position: absolute;
+width: 1400px;
+height: 56px;
+left: 201px;
+top: 0px;
+
+background: #228B22;
+
+
+    border-radius: 60px 0px 0px 0px;
+ 
+}
+nav navlinks{
+justify-content: space-between;
+
+
+}
+nav a{
+text-decoration: none;
+
+
+}
+nav li{
+    list-style: none;
+    display: inline;
+   
+}
+
+nav ul li a{
+    color: white;
+   font-size: 20px;
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 20px;
+  line-height: 24px;
+  padding: 100px;
+ 
+}
+.title{
+    padding-left: 10px;
+    color: white;
+    
+}
+.container1{
+    width: 600px;
+    height: 500px;
+    left: 162px;
+    top: 155px;
+    padding-left: px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    position: absolute;
+
+}
+.hello{
+    color: white;
+    line-height: 44px;
+    font-size: 36px;
+    font-family: 'Inter';
+    font-weight: 700;
+    padding-left: 162px;
+}
+.name{
+    text-align: center;
+    font-family:'Inter';
+    font-size: 36px;
+    font-weight: 700;
+    
+}
+.name1{
+    text-align: center;
+    font-family:'Inter';
+    font-size: 36px;
+    font-weight: 900;
+    color:  #228B22;
+    font-style: normal;
+    
+}
+.name2{
+
+    text-align: center;
+    font-family:'Inter';
+    font-size: 29px;
+    font-weight: 700;
+    font-style: normal;
+    
+
+}
+.text{
+
+    text-align: center;
+}
+.icon{
+position: absolute;
+left: 230px;
+width: 130px;
+height: 66px;
+
+background: #228B22;
+border-radius: 20px;
+}
+.fa-cloud-download{
+    position: absolute;
+   
+    bottom: 23.67%;
+    position: absolute;
+    
+line-height: 90px;
+font-size: 30px;
+color: white;
+
+left: 85px;
+
+}
+
+.resume{
+  padding-left: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFFFF;
+
+}
+.about{
+
+    font-size: 30px;
+    text-align: center;
+}
+
+.download{
+    position: absolute;
+   display:inline;
+    width: 130px;
+    height: 66px;
+   text-align: center;
+
+}
+.image{
+
+
+    position: absolute;
+width: 565px;
+height: 500px;
+left: 877px;
+top: 155px;
+
+border: 10px solid #FFFFFF;
+border-radius: 20px;
+}
+
+
+
+.readmore{
+position: absolute;
+    width: 150px;
+    height: 60px;
+    bottom: -50px;
+    background: #228B22;
+    border-radius: 20px;
+    left: 800px;
+
+}
+.readmore1{
+
+    padding-left: 30px;
+    color: white;
+    font-weight: 800;
+    font-size: 15px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 15px;
+
+}
+.readmore2{
+
+   
+
+    position: absolute;
+    width: 1600px;
+    height: 160px;
+    bottom: -300px;
+    background: #228B22;
+   
+
+}
+
+
+.fa-facebook-square  {
+  font-size: 20px;
+  
+
+    position: absolute;
+   
+    bottom: 23.67%;
+    position: absolute;
+    
+line-height: 90px;
+font-size: 30px;
+color: white;
+
+left: 200px;
+}
+.fa-square-twitter  {
+    font-size: 30px;
+    height: 30px;
+    width: 30px;
+    color: white;
+    padding-left:90px;
+   padding-top: 100px;
+
+}
+.fa-github{
+
+
+    font-size: 30px;
+    height: 30px;
+    width: 30px;
+    color: white;
+    padding-left: 0px;
+   padding-top: 100px;
+}
+.fa-linkedin{
+
+
+    font-size: 30px;
+    height: 30px;
+    width: 30px;
+    color: white;
+    padding-left: 0px;
+   padding-top: 100px;
+
+}
+.fa-envelope{
+    
+    font-size: 30px;
+    height: 40px;
+    width: 30px;
+    color: white;
+    padding-left: 0px;
+   padding-top: 100px;
+
+}
+.fa-instagram{
+
+
+    font-size: 30px;
+    height: 30px;
+    width: 30px;
+    color: white;
+    padding-left: 0px;
+   padding-top: 100px;
+}
+.socialmedia{
+   
+font-weight: 700;
+padding-left: 100px;
+
+}
+.socialmedia1{
+top: 50px;
+   position:absolute;
+   left: -60px;
+}
+.socialmedialine{
+
+height: 2px;
+width: 410px;
+background-color: black;
+position: absolute;
+top: 70px;
+left: 40px;
+
+
+}
