@@ -72,14 +72,14 @@ nav ul li a{
     padding-left: 162px;
 }
 .name{
-    text-align: center;
+    padding-left: 30px;
     font-family:'Inter';
     font-size: 36px;
     font-weight: 700;
     
 }
 .name1{
-    text-align: center;
+  padding-left: 30px;
     font-family:'Inter';
     font-size: 36px;
     font-weight: 900;
@@ -89,7 +89,7 @@ nav ul li a{
 }
 .name2{
 
-    text-align: center;
+padding-left: 30px;
     font-family:'Inter';
     font-size: 29px;
     font-weight: 700;
@@ -98,8 +98,9 @@ nav ul li a{
 
 }
 .text{
-
-    text-align: center;
+    padding-left: 30px;
+font-size: 20px;
+    
 }
 .icon{
 position: absolute;
@@ -132,9 +133,9 @@ left: 85px;
 
 }
 .about{
-
-    font-size: 30px;
-    text-align: center;
+    padding-left: 30px;
+    font-size: 20px;
+   
 }
 
 .download{
@@ -282,3 +283,6 @@ left: 40px;
 
 
 }
+
+
+
