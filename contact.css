@@ -1,0 +1,116 @@
+
+body{
+    background-color: black;
+    width: 1600px;
+    height: 910px;
+    }
+    .navigation{
+        position: absolute;
+    width: 1400px;
+    height: 56px;
+    left: 201px;
+    top: 0px;
+    
+    background: #228B22;
+    
+    
+        border-radius: 60px 0px 0px 0px;
+     
+    }
+    nav navlinks{
+    justify-content: space-between;
+    
+    
+    }
+    nav a{
+    text-decoration: none;
+    
+    
+    }
+    nav li{
+        list-style: none;
+        display: inline;
+       
+    }
+    
+    nav ul li a{
+        color: white;
+       font-size: 20px;
+       font-family: 'Inter';
+       font-style: normal;
+       font-weight: 700;
+       font-size: 20px;
+      line-height: 24px;
+      padding: 100px;
+     
+    }
+    .title{
+        padding-left: 10px;
+        color: white;
+        
+    }
+    .title1{
+       padding-top: 80px;
+      color: white;
+      text-align: center;
+      font-size: 25px;
+      font-family: sans-serif;
+      font-weight: 900;
+    }
+
+     .discription{
+        font-weight: 500;
+       padding-top: 0px;
+      color: white;
+      padding-left: 600px;
+      
+    }
+    .contactus{
+        position: absolute;
+        width: 952px;
+        height: 411px;
+        left: 324px;
+        top: 350px;
+        
+        background: #228B22;
+        border-radius: 20px;
+
+    }
+    input{
+    width: 700px;
+    margin-left: 100px;
+    margin-top: 50px;
+    outline: none;
+   background-color: #228B22;
+    box-shadow: none;
+    border:none;
+    border-bottom:3px solid black ;
+    }
+input::placeholder{
+   color: white;  
+   font-weight: 700;
+}
+.submit{
+position: absolute;
+    height: 30px;
+    width: 130px;
+    background-color: black;
+    color: white;
+    left: 100px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.line{
+    position: absolute;
+    height: 3px;
+    width: 800px;
+    background-color: black;
+   bottom: 110px;
+   left: 100px;
+}
+span{
+  margin-left: 98px;
+  
+}

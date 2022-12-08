@@ -1,0 +1,490 @@
+body{
+    background-color: black;
+    width: 1600px;
+    height: 910px;
+    }
+    .navigation{
+        position: absolute;
+    width: 1400px;
+    height: 56px;
+    left: 201px;
+    top: 0px;
+    
+    background: #228B22;
+    
+    
+        border-radius: 60px 0px 0px 0px;
+     
+    }
+    nav navlinks{
+    justify-content: space-between;
+    
+    
+    }
+    nav a{
+    text-decoration: none;
+    
+    
+    }
+    nav li{
+        list-style: none;
+        display: inline;
+       
+    }
+    
+    nav ul li a{
+        color: white;
+       font-size: 20px;
+       font-family: 'Inter';
+       font-style: normal;
+       font-weight: 700;
+       font-size: 20px;
+      line-height: 24px;
+      padding: 100px;
+     
+    }
+    .title{
+        padding-left: 10px;
+        color: white;
+        
+    }
+    .title1{
+        padding-left: 95px;
+        color: white;
+        padding-top: 50px;
+        font-family: 'Inter';
+
+        font-style: normal;    
+    }
+   
+ .dashboard{
+    position: absolute;
+    width: 236px;
+    height: 426px;
+    left: 40px;
+    top: 162px;
+    background: #FFFFFF;
+    border-radius: 30px;
+ }
+
+ .user{
+  text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 39px;
+    color: #000000;
+
+ }
+ .request{
+text-align: center;
+    position: absolute;
+width: 130px;
+height: 30px;
+left: 50px;
+text-align: center;
+background: #228B22;
+border-radius: 19px;
+ }
+ .requests{
+
+   text-decoration: none;
+  text-align: center;
+    color: white;
+    font-weight: 800;
+    font-size: 13px;
+    font-weight: 700px;
+    position: absolute;
+    bottom: 8px;
+    left: 18px;
+
+ }
+ .user1{
+ padding-top: 50px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+   }
+   .user3{
+  
+       text-align: center;
+       font-weight: 700;
+       font-size: 20px;
+       color: #228B22;
+      }
+      .add{
+        text-align: center;
+            position: absolute;
+        width: 130px;
+        height: 30px;
+        left: 95px;
+        text-align: center;
+        background: #228B22;
+        border-radius: 19px;
+        bottom: 320px;
+         }
+         .adds{
+        
+           text-decoration: none;
+          text-align: center;
+            color: white;
+            font-weight: 800;
+            font-size: 13px;
+            font-weight: 700px;
+            position: absolute;
+            bottom: 8px;
+            left: 18px;
+        
+         }
+
+         .edit{
+            text-align: center;
+                position: absolute;
+            width: 130px;
+            height: 30px;
+            left: 95px;
+            text-align: center;
+            background: #228B22;
+            border-radius: 19px;
+            bottom: 280px;
+             }
+             .edits{
+            
+               text-decoration: none;
+              text-align: center;
+                color: white;
+                font-weight: 800;
+                font-size: 13px;
+                font-weight: 700px;
+                position: absolute;
+                bottom: 8px;
+                left: 18px;
+            
+             }
+             
+         .view{
+            text-align: center;
+                position: absolute;
+            width: 130px;
+            height: 30px;
+            left: 95px;
+            text-align: center;
+            background: #228B22;
+            border-radius: 19px;
+            bottom: 240px;
+             }
+             .views{
+            
+               text-decoration: none;
+              text-align: center;
+                color: white;
+                font-weight: 800;
+                font-size: 13px;
+                font-weight: 700px;
+                position: absolute;
+                bottom: 8px;
+                left: 18px;
+            
+             }
+             .photo{
+position: absolute;
+width: 356px;
+height: 426px;
+left: 350px;
+top: 162px;
+background: #FFFFFF;
+border-radius: 20px;
+             }
+
+
+             img{
+
+                width: 355px;
+height: 270px;
+padding-left: 0px;
+padding-top: 80px;
+             }
+             .explain1{
+
+                position: absolute;
+width: 357px;
+height:80px;
+left: 0px;
+top: 350px;
+
+background: #228B22;
+border-radius: 20px;
+             }
+ .explain{
+                font-size: 20px;
+                font-weight: 400;
+                color: white;
+                padding-left: 35px;
+             }
+
+
+             .photo1{
+                position: absolute;
+                width: 356px;
+                height: 426px;
+                left: 780px;
+                top: 162px;
+                background: #FFFFFF;
+                border-radius: 20px;
+                             }
+
+                             .explaina{
+
+
+                                position: absolute;
+                                width: 357px;
+                                height:80px;
+                                left: 0px;
+                                top: 350px;
+                                
+                                background: #228B22;
+                                border-radius: 20px;
+
+                             }
+                             .explainx{
+                                font-size: 20px;
+                                font-weight: 400;
+                                color: white;
+                                padding-left: 35px;
+                             }
+
+                             .photo2{
+                                position: absolute;
+                                width: 356px;
+                                height: 426px;
+                                left: 1220px;
+                                top: 162px;
+                                background: #FFFFFF;
+                                border-radius: 20px;
+                                             }
+                                             
+                                             .explainb{
+
+                                position: absolute;
+                                width: 357px;
+                                height:80px;
+                                left: 0px;
+                                top: 350px;
+                                
+                                background: #228B22;
+                                border-radius: 20px;
+
+                             }
+                             .explainx{
+                                font-size: 20px;
+                                font-weight: 400;
+                                color: white;
+                                padding-left: 40px;
+                             }
+                             .explainy{
+                                font-size: 20px;
+                                font-weight: 400;
+                                color: white;
+                                padding-left: 40px;
+                             }
+
+
+
+                                .fa-node{
+                                font-size: 45px;
+                                color:black;
+                                padding-top: 0px;
+                                padding-left: 50px;
+                                
+                                }
+                                .fa-laravel{
+                               font-size: 45px;
+                                color:black;
+                                padding-top: 0px;
+                                padding-left: 40px;
+
+                                }
+                             
+                                .fa-php{
+
+                                    font-size: 45px;
+                                color:black;
+                                padding-top: 0px;
+                                padding-left: 40px; 
+                                }
+                                
+                                .fa-html5{
+                                    font-size: 45px;
+                                color:black;
+                                padding-top: 0px;
+                                padding-left: 40px;   
+                                }
+                                .fa-code{
+
+                                    font-size: 45px;
+                                color:black;
+                                padding-top: 0px;
+                                padding-left: 40px;
+                                }
+                               
+                                .fa-css3{
+                                    font-size: 45px;
+                                    color:black;
+                                    padding-top: 0px;
+                                    padding-left: 40px; 
+                                }
+                             
+                                .fa-react{                                  
+                                    font-size: 45px;
+                                    color:black;
+                                    padding-top: 0px;
+                                    padding-left: 40px; 
+                                }
+                                .fa-angular{
+                                    font-size: 45px;
+                                    color:black;
+                                    padding-top: 0px;
+                                    padding-left: 40px; 
+                                }
+                                .fa-node{
+                                    font-size: 45px;
+                                    color:black;
+                                    padding-top: 0px;
+                                    padding-left: 40px; 
+
+                                }
+
+
+                                .readmore{
+                                    position: absolute;
+                                        width: 150px;
+                                        height: 60px;
+                                        bottom: -50px;
+                                        background: #228B22;
+                                        border-radius: 20px;
+                                        left: 1220px;
+                                        top: 610px;
+                                    
+                                    }
+                                    .readmore1{
+                                    
+                                        padding-left: 30px;
+                                        color: white;
+                                        font-weight: 800;
+                                        font-size: 15px;
+                                        text-decoration: none;
+                                        position: absolute;
+                                        bottom: 15px;
+                                    
+                                    }
+                                    .readmorem{
+                                    
+                                        position: absolute;
+                                        width: 150px;
+                                        height: 60px;
+                                        bottom: -50px;
+                                        background: #228B22;
+                                        border-radius: 20px;
+                                        left: 350px;
+                                        top: 610px;
+                                    
+                                    }
+
+                                    .readmoren{
+                                    
+                                        position: absolute;
+                                        width: 150px;
+                                        height: 60px;
+                                        bottom: -50px;
+                                        background: #228B22;
+                                        border-radius: 20px;
+                                        left: 780px;
+                                        top: 610px;
+                                    
+                                    }
+                                    .readmorep{
+                                        position: absolute;
+                                            width: 150px;
+                                            height: 60px;
+                                            bottom: -50px;
+                                            background: #228B22;
+                                            border-radius: 20px;
+                                            left: 40px;
+                                            top: 610px;
+                                        
+                                        }
+                                        #editor{
+
+                                            position: absolute;
+                                            top: 740px;
+                                            left: 40px;
+                                            border-style: solid;
+                                            border: #FFFFFF;
+                                           
+                                           
+                                        }
+
+                                        .readmorek{
+                                            position: absolute;
+                                            padding-top: 510px;
+                                            color: white;
+                                            font-weight: 800;
+                                            font-size: 15px;
+                                            padding-left: 30px;
+                                        }
+                                        input{
+                                            position: absolute;
+                                            top: 100px;
+                                          left: 350px;
+                                          border-style: none;
+                                          border-radius: 5px;
+                                          height: 40px;
+                                          width: 350px;
+  
+                                          }
+                                          .fa-magnifying-glass{
+                                           
+                                       position: absolute;
+                                       top: 110px;
+                                       left: 680px;
+                                       font-size: 20px;
+                                       color: #000000;
+    
+                                            }
+                                            .newpost{
+                                            position: absolute;
+                                                background-color: #228B22;
+                                           padding-top: 10px;
+                                           padding-bottom: 10px;
+                                              width: 130px;
+                                              top: 100px;
+                                              left: 1420px;
+                                              border-radius: 4px;
+                                            }
+                                            .a{
+                                                text-decoration: none;
+                                                color: white;
+                                                font-size: 15px;
+                                                font-weight: 600;
+                                              
+                                                padding-left: 20px;
+                                                font-family: sans-serif;
+
+                                            }
+                                            
+                                            .comment{
+                                                height: 70px;
+                                                width: 160px;
+                                                background-color: #228B22;
+                                                position: absolute;
+                                                bottom: -270px;
+                                                left: 38px;
+                                                padding-bottom: -5px;
+                                                border-radius: 10px;
+                                            }
+                                            .send{
+                                                color: #FFFFFF;
+                                                font-size: 20px;
+                                                font-family: sans-serif;
+                                            }
