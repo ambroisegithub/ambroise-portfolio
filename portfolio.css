@@ -106,6 +106,131 @@ border-radius: 19px;
     font-weight: 700;
     font-size: 20px;
    }
+   .admin{
+font-family: sans-serif;
+font-weight: 600;
+  text-align: center;
+    padding-top: 80px;
+
+   }
+   .user{
+
+    font-family: sans-serif;
+font-weight: 600;
+
+   }
+   .d{
+    position: absolute;
+    background-color: #228B22;
+    height: 40px;
+    width: 150px;
+    left: 130px;
+top: 230px;
+border-radius: 10px;
+
+   }
+   .a{
+    position: absolute;
+padding-top: 10px;
+    color: white;
+    text-decoration: none;
+
+}
+.e{
+    position: absolute;
+    top: 400px;
+    height: 40px;
+    width: 150px;
+    background-color: #228B22;
+    left: 130px;
+    border-radius: 10px;
+}
+.f{
+
+    position: absolute;
+    padding-top: 10px;
+        color: white;
+        text-decoration: none; 
+        left: 15px;
+        font-family: sans-serif;
+        font-weight: 600;
+        
+    font-size: 15px;
+}
+  
+   .t{
+    margin-left: 100px;
+    height: 425px;
+    width: 200px;
+    background-color: white;
+    border-radius: 20px;
+   }
+
+
+
+   .m{
+    position: absolute;
+    background-color: #228B22;
+    height: 40px;
+    width: 150px;
+  top: 350px;
+    left: 130px;
+    border-radius: 10px;
+    
+   }
+   .n{
+
+    position: absolute;
+    padding-top: 10px;
+        color: white;
+        text-decoration: none; 
+        left: 15px;
+        font-family: sans-serif;
+        font-weight: 600;
+   }
+
+   .p{
+
+    position: absolute;
+    background-color: #228B22;
+    height: 40px;
+    width: 150px;
+  top: 450px;
+    left: 130px;
+    border-radius: 10px;
+
+
+   }
+   .y{
+    position: absolute;
+    background-color: #228B22;
+    height: 40px;
+    width: 150px;
+  top: 500px;
+    left: 130px;
+    border-radius: 10px;
+
+   }
+   .x{
+
+    position: absolute;
+    padding-top: 10px;
+        color: white;
+        text-decoration: none; 
+        left: 15px;
+        font-family: sans-serif;
+        font-weight: 600;
+   }
+   .s{
+
+    position: absolute;
+    padding-top: 10px;
+        color: white;
+        text-decoration: none; 
+        left: 15px;
+        font-family: sans-serif;
+        font-weight: 600;
+   }
    .user3{
   
        text-align: center;
@@ -128,7 +253,7 @@ border-radius: 19px;
         
            text-decoration: none;
           text-align: center;
-            color: white;
+            color: black;
             font-weight: 800;
             font-size: 13px;
             font-weight: 700px;
@@ -390,6 +515,16 @@ border-radius: 20px;
                                         top: 610px;
                                     
                                     }
+                                    .readmo{
+                                        position: absolute;
+                                        width: 150px;
+                                        height: 60px;
+                                      
+                                        background: #228B22;
+                                        border-radius: 20px;
+                                   
+                                        
+                                    }
 
                                     .readmoren{
                                     
@@ -418,21 +553,13 @@ border-radius: 20px;
 
                                             position: absolute;
                                             top: 740px;
-                                            left: 40px;
+                                            left: 100px;
                                             border-style: solid;
                                             border: #FFFFFF;
                                            
                                            
                                         }
 
-                                        .readmorek{
-                                            position: absolute;
-                                            padding-top: 510px;
-                                            color: white;
-                                            font-weight: 800;
-                                            font-size: 15px;
-                                            padding-left: 30px;
-                                        }
                                         input{
                                             position: absolute;
                                             top: 100px;
@@ -461,6 +588,7 @@ border-radius: 20px;
                                               top: 100px;
                                               left: 1420px;
                                               border-radius: 4px;
+                                              height: 30px;
                                             }
                                             .a{
                                                 text-decoration: none;
@@ -479,7 +607,7 @@ border-radius: 20px;
                                                 background-color: #228B22;
                                                 position: absolute;
                                                 bottom: -270px;
-                                                left: 38px;
+                                                left: 100px;
                                                 padding-bottom: -5px;
                                                 border-radius: 10px;
                                             }
@@ -487,4 +615,12 @@ border-radius: 20px;
                                                 color: #FFFFFF;
                                                 font-size: 20px;
                                                 font-family: sans-serif;
+                                                left: 100px;
                                             }
+                                            textarea::placeholder{
+                                                color: #000000;
+                                                font-size: 20px;
+                                                font-family: sans-serif;
+                                                font-weight: 600;
+                                            }
+                                           
