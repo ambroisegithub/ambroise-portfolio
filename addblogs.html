@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,38 +15,52 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
-
-<nav class="navigation">
-<ul class="navlinks">
-
-    <li><a href="index.html">Home</a></li>
-    <li><a href="aboutme.html">About</a></li>
-    <li><a href="editblog.html">Edit blogs</a></li>
-    <li><a href="portfolio.html">Blogs</a></li>   
-
-
-</ul>
-</nav>
-<h1 class="title">AMBROISE</h1>
-
-<h2 class="title1">ADD BLOGS</h2>
-
-<div class="contactus">
+   
+ <header class="header">
+    <div class="contain">
+        <div class="row align-items-center justify-content-between">
+           <div class="logo">
+             <a href="#">AMBROISE</a>
+           </div>
+           <input type="checkbox" id="nav-check">
+           <label for="nav-check" class="nav-toggler">
+              <span></span>
+           </label>
+           <nav class="nav">
+              <ul>
+                 <li><a href="index.html" class="active">home</a></li>
+                 <li><a href="about.html">About</a></li>
+                 <li><a href="project.html">Portfolio</a></li>
+                 <li><a href="register.html">Login&Regiter</a></li>
+                 <li><a href="portfolio.html">Blogs</a></li>
+                 <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+           </nav>
+        </div>
+    </div>
+  </header>
+<div class="container">
+   <div class="heads">Add Blogs</div>
   
-    
-    <input type="text" placeholder="Blogs Title">
-    <br>
-    <input type="text" placeholder="Blog Article">
-    <br>
-    
-    <br>
-    <br>
-    <p class="donloads2">Downloads Files or Images</p>
-  <div class="submit">Download File<i class="fa fa-cloud-download" aria-hidden="true"></i></div>
+<div class="rowp">
+   <div class="input1"><input type="text" placeholder="Add Blogs Title"></div>
+<br>
+   <div class="input1"><input type="text" placeholder="Add  Blog Article"></div>
+<br>
 
+
+<span class="dow"><span class="p">Downloads Files And Image</span> <a href=""><span class="iconss"><span class="icons"><i class="fa fa-cloud-download" aria-hidden="true"></i></span></span></a></span>
+<br>
+<br>
 <div class="line"></div>
-<button class="addsblog">ADD BLOG</button>
+
+<input type="submit" type="submit" value="Post" class="message">
 
 </div>
+
+</div>
+
+
+<script src="index.js"></script>
 </body>
 </html>

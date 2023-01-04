@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="signup.css">
     <link rel="stylesheet" href="sign.css">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
@@ -26,18 +34,17 @@
 <h1 class="title">AMBROISE</h1>
 
 <h2 class="title1">SIGN IN</h2>
-
+<form action="#" onsubmit="return validation()">
 <div class="signup">
   
-    
-    <input type="text" placeholder="Enter Your email Adress">
+    <input type="text" name="user" id="user" placeholder="Enter Your User Name" autocomplete="off">
     <br>
-    
-    <input type="password" placeholder="Enter Your password">
-    <br>
-  <br>
-  
-  <button class="submit">SIGN UP</button>
+    <span id="username" class="text-danger font-weight-regular"> </span>
+   <br>
+    <input type="password" name="pass" id="pass" placeholder="Enter new password" autocomplete="of">
+    <span id="passwords" class="text-danger font-weight-regular"></span> 
+        <br>
+  <input type="submit" name="submit" id="submit" value="SIGN IN" class="submit">
   <br>
   <br>
 <p class="alternative">already don't have an account sign up here!!! </p>
@@ -45,5 +52,7 @@
 <div class="signin"><a href="signup.html" class="s">SIGN UP</a></div>
 
 </div>
+</form>
+<script src="login.js"></script>
 </body>
 </html>

@@ -115,7 +115,7 @@
   
       .nav{
         z-index: 1;
-        height: 800px;
+        height: 960px;
       }
       .header .nav{
           position: absolute;
@@ -152,18 +152,22 @@
       
   }
 
-.search_btn input{
- width: 40%;  
- margin-top: 20px;
- padding-top: 20px;
- margin-left: 120px;
-
+.bloggs{
+    margin-top: 15px;
+    width: 10%;
+    padding: 15px 15px;
+    background-color: #228B22;
+    text-align: center;
+    font-weight: 800;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
 }
-.search_btn  .fa-magnifying-glass{
-    color: #000000;
-    margin-left: -25px;
-    font-size: 20px;
-    font-weight: 700;
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
     .container{
         width: 90%;
@@ -172,15 +176,24 @@
     .titledash{
         margin-top: 0px;
     }
+   
+
+  
     .card{
-    width: 18%;
+    
+    width: 95%;
     background-color:white;
     border-radius: 1px solid #ccc;
-   margin-bottom: 80px;
     margin-top: 0px;
     transition: 0.3s;
     border-radius: 10px;
     }
+    .cardd{
+        width: 20%;
+        margin-top: -30px;
+        transition: 0.3s;
+        border-radius: 10px;
+        }
     .header_cards{
     font-size: 15px;
     text-align: center;
@@ -188,8 +201,20 @@
    
    
     }
+    .explore{
+        background-color: #228B22;
+        padding: 10px 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        width: 50%;
+    }
+    .explore a{
+        color: white;
+    }
     .card_body img{
-width: 100%;
+width: 90%;
+margin-left: 15px;
+height: 289px;
 
     }
     .header_cards i{
@@ -198,11 +223,17 @@ font-weight: 500;
 margin-top: -30px;
     }
     .card{
-        height: 325px;
-        padding-top: 40px;
+        height: 300px;
+        padding-top: 10px;
         font-size: 15px;
         
     } 
+    .cardd{
+        height: 330px;
+        padding-top: 50px;
+        
+        
+    }
     .blogs{
         margin-bottom: 20px;
         text-decoration: none;
@@ -243,71 +274,91 @@ margin-top: -30px;
         justify-content: space-around;
         flex-flow: wrap;
     }
-    .view{
-
-        background-color: #228B22;
-        width: 50%;
-        margin-top: 10px;
-        padding: 10px 20px;
-       border-radius: 10px;
-    }
-    .view a{
-        color: white;
-        font-weight: 600;
-    }
-    .area label{
-        font-size: 20px;
-        margin-bottom: 10px;
-        margin-left: 33px;
-        color:white
-        
-       
-    }
-    #textarea{
-        margin-left: 30px;
-        border-radius: 10px;
-        border-style: none;
-    }
-    .submit input{
-        color: white;
-        padding: 10px 10px;
-        background-color: #228B22;
-        margin-left: 30px;
-        border-radius: 10px;
-        font-weight: 600;
-        font-size: 20px;
-        margin-top: 10px;
-    }
    
+
+
     @media screen and (max-width:1000px) {
         .card{
-            width: 40%;
+            height: 350px;
+            width: 100%;
+        }
+        .comment_container{
+           
+            margin-bottom: 10px;
+        }
+      .comment_container  .comm{
+            font-size: 20px;
+            font-weight: 900;
+        }
+      
+        .explore{
+            margin-top: 3px;
+        }
+        .cardd{
+            width: 43%;
             margin-bottom: 90px;
         }
-        .search_btn input{
-            width: 35%;  
-            margin-top: 20px;
-            padding-top: 20px;
-            margin-left: 70px;
-           
-           } 
+     
+     .bloggs{
+        width: 20%;
+     }
+    }
+    .comment_container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+   
+    .comm{
+        font-size: 15px;
+        font-weight: 600;
+        color: #228B22;
+    }
+    .comment{
+        margin-top: 20px;
+        color: white;
+        width: 20%;  
+    }
+    @media screen and (max-width:1250px) {
+        .card{
+           height: 330px;
+        }
+        .comment_container{
+            margin-top: 50px;
+        }
     }
     
     @media screen and (max-width:620px) {
         .card{
-            width: 80%;
+            width: 100%;
+            margin-bottom: 120px;
+        }
+        .bloggs{
+            width: 30%;
+        }
+        .comment_container   .comm{
+            font-size: 12px;
+        }
+    .comment{
+        font-size: 13px;
+    }
+    .comment_container{
+margin-top: -90px;
+margin-bottom: 10px;
+    }
+        .explore{
+margin-top: -110px;
+        }
+        .cardd{
+            width: 83%;
             margin-bottom: 120px;
         }
         .container{
     
         width:100%;
         }
-        .search_btn input{
-            width: 30%;  
-            margin-top: 20px;
-            padding-top: 20px;
-            margin-left: 45px;
-           
-           } 
+       
     }
     

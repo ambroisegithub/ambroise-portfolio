@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,38 +15,57 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
-
-<nav class="navigation">
-<ul class="navlinks">
-
-    <li><a href="index.html">Home</a></li>
-    <li><a href="portfolio.html">Blogs</a></li>
-    <li><a href="addblogs.html">Add blog</a></li>
-    <li><a href="signin.html">Logout</a></li></a></li>   
-    
-
-</ul>
-</nav>
-<h1 class="title">AMBROISE</h1>
-
-<h2 class="title1">EDIT BLOGS</h2>
-
-<div class="contactus">
+   
+ <header class="header">
+    <div class="contain">
+        <div class="row align-items-center justify-content-between">
+           <div class="logo">
+             <a href="#">AMBROISE</a>
+           </div>
+           <input type="checkbox" id="nav-check">
+           <label for="nav-check" class="nav-toggler">
+              <span></span>
+           </label>
+           <nav class="nav">
+              <ul>
+                 <li><a href="index.html" class="active">home</a></li>
+                 <li><a href="about.html">About</a></li>
+                 <li><a href="projects.html">Portfolio</a></li>
+                 <li><a href="register.html">Login&Regiter</a></li>
+                 <li><a href="portfolio.html">Blogs</a></li>
+                 <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+           </nav>
+        </div>
+    </div>
+  </header>
+<div class="container">
+   <div class="heads">Edit Blogs</div>
   
-    
-    <input type="text" placeholder="Edit Existiing Blogs Title">
-    <br>
-    <input type="text" placeholder="Edit Existiing Blog Article">
-    <br>
-    
-    <br>
-    <br>
-    <p class="donloads2">Uploads Files  or Images</p>
-  <div class="submit">Upload     File &nbsp;&nbsp;<i class="fa-solid fa-cloud-arrow-up"></i></div>
+<div class="rowp">
+   <div class="input1"><input type="text" placeholder="Edit Blogs Title"></div>
+<br>
+   <div class="input1"><input type="text" placeholder="Change  Blog Article"></div>
+<br>
 
+
+<span class="dow"><span class="p">Change the Files Or Image</span> <a href=""><span class="iconss"><span class="icons"><i class="fa-solid fa-cloud-arrow-up"></i></span></span></a></span>
+<br>
+<br>
 <div class="line"></div>
-<button class="addsblog">AEDIT BLOG</button>
+
+<input type="submit" type="submit" value="Post" class="message">
 
 </div>
-</body> 
+
+</div>
+
+
+<script src="index.js"></script>
+</body>
 </html>
+
+
+
+
+

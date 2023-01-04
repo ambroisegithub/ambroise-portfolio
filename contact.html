@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,51 +15,61 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
+   
+ <header class="header">
+    <div class="contain">
+        <div class="row align-items-center justify-content-between">
+           <div class="logo">
+             <a href="#">AMBROISE</a>
+           </div>
+           <input type="checkbox" id="nav-check">
+           <label for="nav-check" class="nav-toggler">
+              <span></span>
+           </label>
+           <nav class="nav">
+              <ul>
+                 <li><a href="index.html" class="active">home</a></li>
+                 <li><a href="about.html">About</a></li>
+                 <li><a href="projects.html">Portfolio</a></li>
+                 <li><a href="register.html">Login&Regiter</a></li>
+                 <li><a href="portfolio.html">Blogs</a></li>
+                 <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+           </nav>
+        </div>
+    </div>
+  </header>
+<div class="container">
+   <div class="heads">Contact us</div>
+   <div class="explain"><p>  If you want to any project you can contact us to our
 
-<nav class="navigation">
-<ul class="navlinks">
-
-    <li><a href="index.html">Home</a></li>
-    <li><a href="aboutme.html">About</a></li>
-    <li><a href="project.html">Portfolio</a></li>
-    <li><a href="portfolio.html">Blogs</a></li>   
-    <li><a href="contact.html">Contact Us</a></li>
-
-</ul>
-</nav>
-<h1 class="title">AMBROISE</h1>
-
-<h2 class="title1">CONTACT US</h2>
-<p class="discription">
-    If you want to any project you can contact us to our
-    <br>
-     social media and write you details include your firstname
-     <br> 
-     and last name and your email in the below form, and after soon 
-     <br>
-     we will call you in order to help you to accept want you request. 
-</p>
-
-<div class="contactus">
-  
+      social media and write you details include your firstname
+     
+      and last name and your email in the below form, and after soon 
     
-    <input type="text" placeholder="NAME">
-    <br>
-    <input type="text" placeholder="EMAIL">
-    <br>
-    <input type="text" placeholder="MESSAGE">
-    <br>
-    <br>
-    
-  <button class="submit">Send message</button>
-  <br>
+      we will call you in order to help you to accept want you request. </p></div>
+<form onsubmit="return validation();">
+<div class="rowp">
+   <div class="input1"><input type="text" placeholder="Name" id="name"></div>
+<br>
+<p id="Name"></p>
+   <div class="input1"><input type="text" placeholder="Email" id="emails"></div>
+<br>
+<p id="emailids"></p>
+<div class="input1"><input type="text" placeholder="Message" id="user"></div>
+<br>
+<p id="username"></p>
+<input type="submit" type="submit" value="Send Message" class="message">
+<br>
 <div class="line"></div>
 <br>
-<br>
-<br>
-<br>
-<span><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;</span>0786255860<span> <i class="fa-solid fa-envelope">&nbsp;&nbsp;</i>muhayimana21@gmail.com</span><span><i class="fa-brands fa-whatsapp">&nbsp;&nbsp;</i>0786255860</span><span><i class="fa-solid fa-location-pin">&nbsp;&nbsp;</i>KIGALI</span>
+<span class="location"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;</span><span class="zero">0786255860</span><span class="zero"> &nbsp;&nbsp;<i class="fa-solid fa-envelope">&nbsp;&nbsp;</i>muhayimana21@gmail.com</span>&nbsp;&nbsp;<span class="zero"><i class="fa-brands fa-whatsapp">&nbsp;&nbsp;</i>0786255860</span>&nbsp;&nbsp;<span class="zero"><i class="fa-solid fa-location-pin">&nbsp;&nbsp;</i>KIGALI</span>
 
 </div>
+
+</div>
+
+
+<script src="contact.js"></script>
 </body>
 </html>
