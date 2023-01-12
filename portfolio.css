@@ -1,313 +1,395 @@
+:root {
+    --color-1: #228B22;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: black;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.contain {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
 
 
-:root{
-    --color-1:#228B22;
-    
-  }
-  body{
-    
-      font-family: sans-serif;
-      background-color:black;
-      height: auto;
-  }
-  *{
-      box-sizing: border-box;
-      margin:0;
-      padding:0;
-  }
-  a{
-      text-decoration: none;
-  }
-  ul{
-      list-style: none;
-  }
-  .contain{
-      max-width: 1170px;
-      margin: auto;
-     
-    
-  }
+/*header*/
 
-  .row{
-      display: flex;
-      flex-wrap: wrap;
-  }
-  .align-items-center{
-      align-items: center;
-  }
-  .justify-content-between{
-      justify-content: space-between;
-  }
-  /*header*/
-  .header{
-      background-color: var(--color-1);
-      padding:12px 0;
-      position: relative;
-      border-radius: 60px 0px 0px 0px;
-  }
-  .header .logo,
-  .header .nav{
-      padding:0 15px;
-  }
-  .header .logo a{
-      font-size: 30px;
-      color: white;
-      text-transform: capitalize;
-  }
-  .header .nav ul li{
-      display: inline-block;
-      margin-left: 40px;
-  }
-  .header .nav ul li a{
-      display: block;
-      font-size: 16px;
-      padding:10px 0;
-      color: white;
-      text-transform: capitalize;
-      transition: all 0.5s ease;
-  }
-  .header .nav ul li a:hover,
-  .header .nav ul li a.active{
-      color: #ffffff;
-  }
-  .header #nav-check{
-      position: absolute;
-      opacity:0;
-      pointer-events: none;
-  }
-  .nav-toggler{
-      height: 34px;
-      width: 44px;
-      background-color: #ffffff;
-      border-radius: 4px;
-      cursor: pointer;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      margin-right: 15px;
-  }
-  .nav-toggler span{
-      display: block;
-      height: 2px;
-      width: 20px;
-      background-color: var(--color-1);
-      position: relative;
-  }
-  .nav-toggler span::before,
-  .nav-toggler span::after{
-     content: '';
-     position: absolute;
-     width: 100%;
-     height: 100%;
-     background-color: var(--color-1);
-     left:0;
-  }
-  .nav-toggler span::before{
-      top: -6px;
-  }
-  .nav-toggler span::after{
-      top: 6px;
-  }
-  @media(max-width: 991px){
-      .nav-toggler{
-          display: flex;
-      }
-  
-      .nav{
+.header {
+    background-color: var(--color-1);
+    padding: 12px 0;
+    position: relative;
+    border-radius: 60px 0px 0px 0px;
+}
+
+.header .logo,
+.header .nav {
+    padding: 0 15px;
+}
+
+.header .logo a {
+    font-size: 30px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.header .nav ul li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.header .nav ul li a {
+    display: block;
+    font-size: 16px;
+    padding: 10px 0;
+    color: white;
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+}
+
+.header .nav ul li a:hover,
+.header .nav ul li a.active {
+    color: #ffffff;
+}
+
+.header #nav-check {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nav-toggler {
+    height: 34px;
+    width: 44px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.nav-toggler span {
+    display: block;
+    height: 2px;
+    width: 20px;
+    background-color: var(--color-1);
+    position: relative;
+}
+
+.nav-toggler span::before,
+.nav-toggler span::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-1);
+    left: 0;
+}
+
+.nav-toggler span::before {
+    top: -6px;
+}
+
+.nav-toggler span::after {
+    top: 6px;
+}
+
+@media(max-width: 991px) {
+    .nav-toggler {
+        display: flex;
+    }
+    .nav {
         z-index: 1;
-        height: 800px;
-      }
-      .header .nav{
-          position: absolute;
-          left:0;
-          top:100%;
-          width: 100%;
-          background-color: var(--color-1);
-          border-top: 1px solid rgba(255,255,255,0.2);
-          opacity:0;
-          visibility: hidden;
-      }
-      .header .nav ul li{
-          display: block;
-          margin:0;
-      }
-      .header #nav-check:checked ~ .nav{
-         opacity: 1;
-         visibility: visible;
-      }
-      .header #nav-check:focus ~ .nav-toggler{
-          box-shadow: 0 0 15px #000000;
-      }
-      .header #nav-check:checked ~ .nav-toggler span{
-          background-color: transparent;
-      }
-      .header #nav-check:checked ~ .nav-toggler span::before{
-          top:0;
-          transform: rotate(45deg);
-      }
-      .header #nav-check:checked ~ .nav-toggler span::after{
-          top:0;
-          transform: rotate(-45deg);
-      }
-      
-  }
-
-.search_btn input{
- width: 40%;  
- margin-top: 20px;
- padding-top: 20px;
- margin-left: 120px;
-
+        height: 960px;
+    }
+    .header .nav {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        background-color: var(--color-1);
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        opacity: 0;
+        visibility: hidden;
+    }
+    .header .nav ul li {
+        display: block;
+        margin: 0;
+    }
+    .header #nav-check:checked~.nav {
+        opacity: 1;
+        visibility: visible;
+    }
+    .header #nav-check:focus~.nav-toggler {
+        box-shadow: 0 0 15px #000000;
+    }
+    .header #nav-check:checked~.nav-toggler span {
+        background-color: transparent;
+    }
+    .header #nav-check:checked~.nav-toggler span::before {
+        top: 0;
+        transform: rotate(45deg);
+    }
+    .header #nav-check:checked~.nav-toggler span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
 }
-.search_btn  .fa-magnifying-glass{
-    color: #000000;
-    margin-left: -25px;
+
+.container {
+    width: 90%;
+    margin: 10px auto;
+    margin-bottom: 100px;
+}
+
+.titledash {
+    margin-top: 0px;
+}
+
+.projects1 {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.title1 {
+    font-weight: 900;
+    color: white;
+    margin-bottom: 20px;
     font-size: 20px;
-    font-weight: 700;
 }
-    .container{
-        width: 90%;
-        margin: 50px auto;
-    }
-    .titledash{
-        margin-top: 0px;
-    }
-    .card{
-    width: 18%;
-    background-color:white;
+
+.card {
+    width: 120%;
+    background-color: white;
     border-radius: 1px solid #ccc;
-   margin-bottom: 80px;
     margin-top: 0px;
     transition: 0.3s;
     border-radius: 10px;
-    }
-    .header_cards{
+}
+
+.cardd {
+    width: 20%;
+    margin-top: -30px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.header_cards {
     font-size: 15px;
     text-align: center;
-    background-color:white;
-   
-   
-    }
-    .card_body img{
-width: 100%;
+    background-color: white;
+}
 
-    }
-    .header_cards i{
-font-size: 30px;
-font-weight: 500;
-margin-top: -30px;
-    }
-    .card{
-        height: 325px;
-        padding-top: 40px;
-        font-size: 15px;
-        
-    } 
-    .blogs{
-        margin-bottom: 20px;
-        text-decoration: none;
-        background-color: #228B22;
-        width: 50%;
-        padding: 5px 5px;
-        border-radius: 10px;
-        margin-left: 50px;
+.view_more {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
-    }
-    .blogs a{
-        text-decoration: none;
-        color: white;
-        padding-left: 3px;
-        font-size: 15px;
-        font-weight: 600;
-    }
-    .card_body .btn{
-        text-decoration: none;
-        font-size: 13px;
-        width: 100%;
-        background-color:#228B22;
-        padding: 20px 10px;
-        display: block;
-      text-align: center;
-     height: 80px;
-      color: white;
+.explore {
+    background-color: #228B22;
+    padding: 10px 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 25%;
+}
+
+button {
+    color: white;
+    border: none;
+}
+
+.htl p:hover {
+    background-color: #228B22;
+    color: white;
+}
+
+.card_body img {
+    width: 95%;
+    margin-left: 8px;
+    height: 180px;
+}
+
+.header_cards i {
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: -30px;
+}
+
+.card {
+    height: 300px;
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+.cardd {
+    height: 330px;
+    padding-top: 50px;
+}
+
+.blogs {
+    margin-bottom: 20px;
+    text-decoration: none;
+    background-color: #228B22;
+    width: 50%;
+    padding: 5px 5px;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+.blogs a {
+    text-decoration: none;
+    color: white;
+    padding-left: 3px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.card_body .btn {
+    text-decoration: none;
+    font-size: 13px;
+    width: 100%;
+    background-color: #228B22;
+    padding: 20px 10px;
+    display: block;
+    text-align: center;
+    height: 80px;
+    color: white;
     margin-top: 10px;
     border-radius: 10px;
-    }
-    .card:hover{
-    
-        transform: scale(1);
-        box-shadow: 0 0 40px -10px rgb(103, 16, 16);
-    }
-    .row{
-        display: flex;
-        justify-content: space-around;
-        flex-flow: wrap;
-    }
-    .view{
+}
 
-        background-color: #228B22;
-        width: 50%;
+.card:hover {
+    transform: scale(1);
+    box-shadow: 0 0 40px -10px rgb(103, 16, 16);
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.htl p {
+    margin-left: 5px;
+    color: black;
+    font-weight: 600;
+}
+
+@media screen and (max-width:1000px) {
+    .comment #add {
+        margin-top: -70px;
+        font-weight: 900;
+        margin-left: 230px;
+    }
+    .card {
+        height: 350px;
+        width: 100%;
+    }
+    .explore {
+        margin-top: 3px;
+    }
+    .cardd {
+        width: 43%;
+        margin-bottom: 110px;
+    }
+    .textarea #textarea {
+        margin-left: 230px;
         margin-top: 10px;
-        padding: 10px 20px;
-       border-radius: 10px;
     }
-    .view a{
-        color: white;
-        font-weight: 600;
+}
+
+@media screen and (max-width:1250px) {
+    .card {
+        height: 330px;
     }
-    .area label{
-        font-size: 20px;
-        margin-bottom: 10px;
-        margin-left: 33px;
-        color:white
-        
-       
-    }
-    #textarea{
-        margin-left: 30px;
-        border-radius: 10px;
-        border-style: none;
-    }
-    .submit input{
-        color: white;
-        padding: 10px 10px;
-        background-color: #228B22;
-        margin-left: 30px;
-        border-radius: 10px;
-        font-weight: 600;
-        font-size: 20px;
+    .explore {
+        width: 30%;
         margin-top: 10px;
     }
-   
-    @media screen and (max-width:1000px) {
-        .card{
-            width: 40%;
-            margin-bottom: 90px;
-        }
-        .search_btn input{
-            width: 35%;  
-            margin-top: 20px;
-            padding-top: 20px;
-            margin-left: 70px;
-           
-           } 
+    textarea {
+        margin-left: 100px;
     }
-    
-    @media screen and (max-width:620px) {
-        .card{
-            width: 80%;
-            margin-bottom: 120px;
-        }
-        .container{
-    
-        width:100%;
-        }
-        .search_btn input{
-            width: 30%;  
-            margin-top: 20px;
-            padding-top: 20px;
-            margin-left: 45px;
-           
-           } 
+}
+
+@media screen and (max-width:620px) {
+    .card {
+        width: 100%;
+        margin-bottom: 120px;
     }
-    
+    .explore {
+        margin-top: -100px;
+        height: 30px;
+    }
+    button {
+        width: 10%;
+    }
+    .cardd {
+        width: 83%;
+        margin-bottom: 120px;
+    }
+    .container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .textarea {
+        margin-left: -200px;
+        border: none;
+    }
+    .comment #add {
+        margin-top: 20px;
+        color: white;
+        margin-left: 35px;
+    }
+}
+
+.textarea textarea {
+    margin-left: 160px;
+    border: none;
+}
+
+.comment p {
+    color: white;
+    margin-left: 160px;
+}
+
+.textarea ::placeholder {
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-weight: 700;
+}
