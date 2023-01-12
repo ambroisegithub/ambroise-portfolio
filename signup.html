@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+
+<nav class="navigation">
+<ul class="navlinks">
+
+    <li><a href="index.html">Home</a></li>
+    <li><a href="aboutme.html">About</a></li>
+    <li><a href="project.html">Portfolio</a></li>
+    <li><a href="portfolio.html">Blogs</a></li>  
+     
+    <li><a href="contact.html">Contact Us</a></li>
+
+</ul>
+</nav>
+<h1 class="title">AMBROISE</h1>
+
+<h2 class="title1">SIGN UP</h2>
+<form action="#" onsubmit="return validation()">
+<div class="signup">
+  
+    
+    <input type="text" name="email" id="emails" placeholder="Enter Your email Adress" autocomplete="off">
+    <br>
+    <span id="emailids" class="text-danger font-weight-regular"> </span>
+    <br>
+    <input type="text" name="name" id="name" placeholder="Enter First Name And Lastname" autocomplete="off">
+    <span id="Name" class="text-danger font-weight-regular"> </span>
+    <br>
+    <input type="password" name="pass" id="pass" placeholder="Enter new password" autocomplete="of">
+    <span id="passwords" class="text-danger font-weight-regular"></span> 
+  
+        <br>
+    <input type="password" name="conpass" id="conpass" placeholder="Repeat the same password to confirm" autocomplete="off">
+    <br>
+    <span id="confrmpass" class="text-danger font-weight-regular"></span>  
+  
+    <br>
+    <br>
+  <input type="submit" name="submit" value="SIGN UP" class="submit">
+  <br>
+  <br>
+<p class="alternative">already have an account login here!!! </p>
+
+<div class="signin"><a href="signin.html" class="s">SIGN IN</a></div>
+
+</div>
+</form>
+
+<script src="index.js"></script>
+</body>
+</html>

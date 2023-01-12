@@ -1,0 +1,352 @@
+
+
+:root{
+    --color-1:#228B22;
+    
+  }
+  body{
+    
+      font-family: sans-serif;
+      background-color:black;
+      height: auto;
+  }
+  *{
+      box-sizing: border-box;
+      margin:0;
+      padding:0;
+  }
+  a{
+      text-decoration: none;
+  }
+  ul{
+      list-style: none;
+  }
+  .contain{
+      max-width: 1170px;
+      margin: auto;
+     
+    
+  }
+
+  .row{
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .align-items-center{
+      align-items: center;
+  }
+  .justify-content-between{
+      justify-content: space-between;
+  }
+  /*header*/
+  .header{
+      background-color: var(--color-1);
+      padding:12px 0;
+      position: relative;
+      border-radius: 60px 0px 0px 0px;
+  }
+  .header .logo,
+  .header .nav{
+      padding:0 15px;
+  }
+  .header .logo a{
+      font-size: 30px;
+      color: white;
+      text-transform: capitalize;
+  }
+  .header .nav ul li{
+      display: inline-block;
+      margin-left: 40px;
+  }
+  .header .nav ul li a{
+      display: block;
+      font-size: 16px;
+      padding:10px 0;
+      color: white;
+      text-transform: capitalize;
+      transition: all 0.5s ease;
+  }
+  .header .nav ul li a:hover,
+  .header .nav ul li a.active{
+      color: #ffffff;
+  }
+  .header #nav-check{
+      position: absolute;
+      opacity:0;
+      pointer-events: none;
+  }
+  .nav-toggler{
+      height: 34px;
+      width: 44px;
+      background-color: #ffffff;
+      border-radius: 4px;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+  }
+  .nav-toggler span{
+      display: block;
+      height: 2px;
+      width: 20px;
+      background-color: var(--color-1);
+      position: relative;
+  }
+  .nav-toggler span::before,
+  .nav-toggler span::after{
+     content: '';
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background-color: var(--color-1);
+     left:0;
+  }
+  .nav-toggler span::before{
+      top: -6px;
+  }
+  .nav-toggler span::after{
+      top: 6px;
+  }
+  @media(max-width: 991px){
+      .nav-toggler{
+          display: flex;
+      }
+      .hello{
+        font-size: 10px;
+      }
+      .name1{
+
+        font-size: 10px;
+      }
+      .nav{
+        z-index: 1;
+        height: 800px;
+      }
+      .header .nav{
+          position: absolute;
+          left:0;
+          top:100%;
+          width: 100%;
+          background-color: var(--color-1);
+          border-top: 1px solid rgba(255,255,255,0.2);
+          opacity:0;
+          visibility: hidden;
+      }
+      .header .nav ul li{
+          display: block;
+          margin:0;
+      }
+      .header #nav-check:checked ~ .nav{
+         opacity: 1;
+         visibility: visible;
+      }
+      .header #nav-check:focus ~ .nav-toggler{
+          box-shadow: 0 0 15px #000000;
+      }
+      .header #nav-check:checked ~ .nav-toggler span{
+          background-color: transparent;
+      }
+      .header #nav-check:checked ~ .nav-toggler span::before{
+          top:0;
+          transform: rotate(45deg);
+      }
+      .header #nav-check:checked ~ .nav-toggler span::after{
+          top:0;
+          transform: rotate(-45deg);
+      }
+      
+  }
+
+
+  *{
+
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.heading p{
+padding-top: 10px;
+    font-size: 20px;
+    text-align: center;
+  
+}
+.card_body{
+    
+    margin-top: -30px;
+}
+.container{
+    width: 90%;
+   
+}
+.head{
+    padding-top: 20px;
+   margin-left: 70px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+.card{
+width: 40%;
+background-color:white;
+border-radius: 1px solid #ccc;
+margin-bottom: 10px;
+margin-top: 5px;
+transition: 0.3s;
+border-radius: 10px;
+
+}
+.header_cards{
+    border-radius: 10px;
+font-size: 15px;
+text-align: center;
+background-color: white;
+padding: 50px 10px;
+
+}
+.card{
+    font-size: 15px;
+    
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+    border-radius: 10px;
+} 
+.card_body .btn{
+    text-decoration: none;
+    font-size: 13px;
+    width: 30%;
+    background-color:#228B22;
+    padding: 10px 10px;
+    display: block;
+  text-align: center;
+  padding: 10px 5px;
+  color: white;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  margin-left: 120px;
+}
+.header_cards .my{
+font-size: 20px;
+font-weight:600 ;
+color: #000000;
+
+}
+.header_cards h1{
+    font-size: 39px;
+    font-weight:600 ;
+    color: #228B22;
+    
+    }
+    .header_cards .software{
+margin-bottom: 0px;
+        font-size: large;
+        font-weight: 600;
+    }
+    .card_body p{
+margin-left: 10px;
+font-size: 15px;
+font-weight: 700;
+
+    }
+    .card_body .fa-cloud-download{
+        font-size: 25px;
+    }
+    .card_body .downloadbtn{
+        margin-bottom: -40px;
+        font-size: 20px;
+        font-weight: 700;
+        color: #228B22;
+    }
+    .card_body .know{
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+.card:hover{
+
+    transform: scale(1);
+    box-shadow: 0 0 40px -10px rgb(103, 16, 16);
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+.footer{
+    width: 110%;
+    background-color: #228B22;
+    padding: 65px 10px;
+    margin-left: 8px;
+    margin-right: 0px;
+    background-size: cover;
+    margin-bottom: 0px;
+}
+.line{
+    background-color: #000000;
+    width: 21%;
+    padding: 1PX 1PX;
+}
+.socialmedial{
+    margin-top: -20PX;
+    font-weight: 700;
+}
+
+@media screen and (max-width:1100px) {
+    .card{
+        width: 40%;
+    }
+    .line{
+        background-color: #000000;
+        width: 47%;
+        padding: 1PX 1PX;
+    }
+  
+ .footer{
+    width: 100%;
+    margin-left: 40px;
+ }  
+}
+@media screen and (max-width:420px) {
+   
+ .footer{
+    width: 50%;
+  margin-left: 20px;
+
+ } 
+
+
+}
+
+
+
+
+@media screen and (max-width:620px) {
+    .card{
+        width: 80%;
+    }
+    .container{
+
+    width:100%;
+    }
+    .footer{
+        width: 100%;
+    }
+    .line{
+        width: 90%;
+    }
+}
+.icon i{
+
+    color: white;
+    font-size: 25px;
+    margin-top: 20px;
+
+}
+ .fa-linkedin{
+    color: white;
+    font-size: 25px;
+    margin-top: 20px;   
+}

@@ -1,0 +1,465 @@
+
+:root{
+    --color-1:#228B22;
+    
+  }
+  body{
+    
+      font-family: sans-serif;
+      background-color:black;
+      height: auto;
+  }
+  *{
+      box-sizing: border-box;
+      margin:0;
+      padding:0;
+  }
+  a{
+      text-decoration: none;
+  }
+  ul{
+      list-style: none;
+  }
+  .contain{
+      max-width: 1170px;
+      margin: auto;
+    margin-top: 0px; 
+    
+  }
+
+  .row{
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .align-items-center{
+      align-items: center;
+  }
+  .justify-content-between{
+      justify-content: space-between;
+  }
+  /*header*/
+  .header{
+      background-color: var(--color-1);
+      padding:12px 0;
+      position: relative;
+      border-radius: 60px 0px 0px 0px;
+  }
+  .header .logo,
+  .header .nav{
+      padding:0px 15px;
+      
+  }
+  .header .logo a{
+    
+      font-size: 30px;
+      color: white;
+      text-transform: capitalize;
+     
+  }
+  .header .nav ul li{
+      display: inline-block;
+      margin-left: 60px;
+  }
+  .header .nav ul li a{
+      display: block;
+      font-size: 16px;
+      padding:10px 0;
+      color: white;
+      text-transform: capitalize;
+      transition: all 0.5s ease;
+  }
+  .header .nav ul li a:hover,
+  .header .nav ul li a.active{
+      color: #ffffff;
+  }
+  .header #nav-check{
+      position: absolute;
+      opacity:0;
+      pointer-events: none;
+  }
+  .nav-toggler{
+      height: 34px;
+      width: 44px;
+      background-color: #ffffff;
+      border-radius: 4px;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+  }
+  .nav-toggler span{
+      display: block;
+      height: 2px;
+      width: 20px;
+      background-color: var(--color-1);
+      position: relative;
+  }
+  .nav-toggler span::before,
+  .nav-toggler span::after{
+     content: '';
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background-color: var(--color-1);
+     left:0px;
+  }
+  .nav-toggler span::before{
+      top: -6px;
+  }
+  .nav-toggler span::after{
+      top: 6px;
+  }
+  @media(max-width: 991px){
+    
+      .nav-toggler{
+          display: flex;
+      }
+      .header .logo a{
+        margin-left: -130px;
+          font-size: 30px;
+          color: white;
+          text-transform: capitalize;
+      }
+      .nav{
+        z-index: 1;
+        height: 800px;
+      }
+      .header .nav{
+          position: absolute;
+          left:0;
+          top:100%;
+          width: 100%;
+          background-color: var(--color-1);
+          border-top: 1px solid rgba(255,255,255,0.2);
+          opacity:0;
+          visibility: hidden;
+      }
+      .header .nav ul li{
+          display: block;
+          margin:0;
+      }
+      .header #nav-check:checked ~ .nav{
+         opacity: 1;
+         visibility: visible;
+      }
+      .header #nav-check:focus ~ .nav-toggler{
+          box-shadow: 0 0 15px #000000;
+      }
+      .header #nav-check:checked ~ .nav-toggler span{
+          background-color: transparent;
+      }
+      .header #nav-check:checked ~ .nav-toggler span::before{
+          top:0;
+          transform: rotate(45deg);
+      }
+      .header #nav-check:checked ~ .nav-toggler span::after{
+          top:0;
+          transform: rotate(-45deg);
+      }
+      
+  }
+
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.heading p{
+padding-top: 10px;
+    font-size: 20px;
+    text-align: center;
+  
+}
+.container{
+    width: 90%;
+    margin: 40px auto;
+}
+.cardss{
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+    background-color:white;
+    border-radius: 1px solid #ccc;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    transition: 0.3s; 
+    border-radius: 20px;  
+}
+.readme{
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+.card{
+width: 46%;
+background-color:black;
+margin-bottom: 30px;
+margin-top: 0px;
+transition: 0.3s;
+}
+.header_cards{
+font-size: 15px;
+text-align: center;
+color: #228B22;
+padding: 10px 70px;
+font-family: sans-serif;
+
+}
+
+.header_cards h1{
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-top: -20px;
+
+}
+ .header_card h1{
+    color: #228B22;
+    margin-top: -90px;
+    margin-left: 30px;
+
+}
+.card_bod{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.compentance{
+    background-color: #228B22;
+    color: white;
+    width: 30%;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 20px 10px;
+    margin-left: -10px;
+    margin-bottom: 20px;
+}
+
+.header_cards h4{
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-top: -20px;
+    font-weight: 800;
+}
+.card{
+border-radius: 20px;
+    padding: 30px 20px;
+   
+    font-size: 15px;
+    
+} 
+.cardss{
+
+    padding: 30px 20px;
+   
+    font-size: 15px;
+    
+}.card_body{
+    margin-left: 30px;
+} 
+.card_body label{
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    
+}
+.header_cards h1{
+    font-weight: 900;
+    font-size: 25px;
+    margin-left: 0px;
+}
+.card_body .btn{
+    text-decoration: none;
+    font-size: 13px;
+    width: 30%;
+    background-color: red;
+    padding: 10px 10px;
+    display: block;
+  text-align: center;
+  padding: 10px 5px;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+.skills p{
+    color:black;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 800;
+}
+.card_body div img{
+    border-radius: 20px;
+    width: 90%;
+    margin-left: 0px;
+    height: 500px;
+}
+.skills span{
+    color: #228B22;
+    font-size: 20px;
+}
+.skills  .a{
+    margin-left: 0px;
+}
+ .skills{
+    
+    padding: 20px 60px;
+    margin-bottom: -20px;
+    
+}
+.skills p{
+    color: white;
+
+    
+}
+.card_bo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+} 
+
+@media screen and (max-width:1000px) {
+    .card{
+        width: 50%;
+    }
+    .cardss{
+        width: 50%;
+    }
+ .skills{
+display: flex;
+flex-direction: column;
+ }  
+   
+}
+@media screen and (max-width:805px) {
+   .compentanc{
+    font-size: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-weight: 600;
+    border-radius: 5px;
+   
+    
+   }
+   .skills {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   
+     }  
+       
+   .header_cards h4{
+margin-left: -30px;
+   }
+   .compentance{
+    border-radius: 5px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+   
+    
+   }
+   .card_bod{
+   display: grid;
+   }
+}
+
+@media screen and (max-width:620px) {
+    .card{
+        width: 80%;
+    }
+    .cardss{
+        width: 80%;
+    }
+    .skills{
+        display: flex;
+        flex-direction: column;
+        width: 300%;
+         }  
+           
+    .header .logo a{
+        font-weight:700 ;
+        margin-left: -30px;
+          font-size: 25px;
+          color: white;
+          text-transform: capitalize;
+      }
+    .container{
+
+    width:100%;
+    }
+    
+
+}
+@media screen and (max-width:620px) {
+    .line{
+        width: 90%;
+    }
+    
+   
+}
+
+   
+
+.footer{
+    width: 100%;
+ margin-right: 2000px;
+ } 
+
+.footer{
+    width: 99%;
+    background-color: #228B22;
+    padding: 20px 50px;
+    margin-left: 8px;
+    margin-right: 0px;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+.line{
+    background-color: #000000;
+    width: 21%;
+    padding: 1PX 1PX;
+}
+.socialmedial{
+    margin-top: 0PX;
+    font-weight: 700;
+}
+@media screen and (max-width:1100px) {
+    .footer{
+        width: 98%;
+    }
+    .card_body label{
+        font-size: 20px;
+    }
+    .line{
+        background-color: #000000;
+        width: 47%;
+        padding: 1PX 1PX;
+    }
+}
+.icon i{
+
+    color: white;
+    font-size: 25px;
+    margin-top: 20px;
+
+}
+.fa-linkedin{
+    color: white;
+    font-size: 25px;
+    margin-top: 20px;   
+}
+
+
+
+
